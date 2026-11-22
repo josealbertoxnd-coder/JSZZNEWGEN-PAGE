@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07070a">
+<title>Mi plan | JSZZNEWGEN</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<a class="brand" href="index.html"><img src="img/jszznewgen-logo.svg" alt=""><span>JSZZ<small>NEWGEN</small></span></a>
+<nav>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="clases.html">Clases</a></li>
+<li><a href="carrito.html" aria-current="page">Mi plan</a></li>
+<li><a href="login.html">Mi cuenta</a></li>
+<li><a href="nosotros.html">Nosotros</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</nav>
+</header>
+
+<main class="cart-page">
+<section class="cart-hero" aria-labelledby="cart-title">
+<p class="cart-kicker"><span></span> TU PRÓXIMO ROUND EMPIEZA AQUÍ</p>
+<h1 id="cart-title">Arma tu <em>plan</em></h1>
+<p>Revisa tus entrenamientos, ajusta tu carga y prepárate para superar tu propio límite.</p>
+<div class="cart-hero-mark" aria-hidden="true">01</div>
+</section>
+
+<div class="cart-layout">
+<section class="cart-panel" aria-labelledby="items-title">
+<div class="cart-panel-heading">
+<div>
+<p class="cart-kicker">SELECCIÓN DE COMBATE</p>
+<h2 id="items-title">Tu entrenamiento</h2>
+</div>
+<span class="cart-count" id="cart-count">2 DISCIPLINAS</span>
+</div>
+
+<p class="cart-status" id="cart-status" role="status" aria-live="polite"></p>
+<div class="cart-table-wrap">
+<table class="cart-table">
+<caption>Planes y clases que vas a contratar</caption>
+<thead>
+<tr>
+<th scope="col">Plan o clase</th>
+<th scope="col">Precio</th>
+<th scope="col">Cantidad</th>
+<th scope="col">Subtotal</th>
+<th scope="col"><span class="visually-hidden">Acciones</span></th>
+</tr>
+</thead>
+<tbody id="cart-items">
+</tbody>
+</table>
+</div>
+
+<div class="cart-bottom">
+<span class="cart-bottom-line" aria-hidden="true"></span>
+<a class="cart-back-link" href="clases.html">← Seguir explorando clases</a>
+</div>
+</section>
+
+<aside class="cart-summary" aria-labelledby="summary-title">
+<p class="cart-kicker">CHECKPOINT / 01</p>
+<h2 id="summary-title">Resumen de<br>combate</h2>
+<div class="summary-rule"></div>
+<div class="summary-row">
+<span>Disciplinas</span>
+<strong id="summary-items">0</strong>
+</div>
+<div class="summary-row">
+<span>Unidades</span>
+<strong id="summary-quantity">0</strong>
+</div>
+<div class="summary-total">
+<span>Inversión total</span>
+<strong id="cart-total">$ 0</strong>
+</div>
+<p class="summary-note">El valor final corresponde a la selección actual de tu plan.</p>
+<a class="checkout-button" id="checkout-link" href="pago.html">
+<span>Continuar al pago</span><span aria-hidden="true">↗</span>
+</a>
+<p class="summary-secure">● TU META, TU RITMO, TU PROGRESO</p>
+</aside>
+</div>
+</main>
+
+<footer>
+<p>JSZZNEWGEN · Calle 13 #24-18, Sabana de Torres, Santander</p>
+<p><a href="contacto.html">Contacto</a> · <a href="nosotros.html">Nosotros</a></p>
+<p><small>© 2026 JSZZNEWGEN. Todos los derechos reservados.</small></p>
+</footer>
+<script src="cart-store.js"></script>
+<script src="carrito.js"></script>
+</body>
+</html>

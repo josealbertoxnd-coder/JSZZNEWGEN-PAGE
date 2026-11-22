@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inicio | JSZZNEWGEN</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ENCABEZADO: igual en todas las páginas -->
+<header>
+<a class="brand" href="index.html"><img src="img/jszznewgen-logo.svg" alt=""><span>JSZZ<small>NEWGEN</small></span></a>
+<nav>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="clases.html">Clases</a></li>
+<li><a href="carrito.html">Mi plan</a></li>
+<li><a href="login.html">Mi cuenta</a></li>
+<li><a href="nosotros.html">Nosotros</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- CONTENIDO PRINCIPAL -->
+<main>
+<!-- Banner -->
+<section class="hero">
+<h1>Bienvenido a JSZZNEWGEN</h1>
+<p>Entrena fuerte, mejora tu salud y alcanza tus metas con entrenadores certificados en Sabana de Torres, Santander.</p>
+<a href="clases.html">Ver clases y planes</a>
+</section>
+
+<!-- Destacados -->
+<section class="grid">
+<h2>Planes y clases destacados</h2>
+<article>
+<img src="img/gym-1.png" alt="Persona entrenando con pesas">
+<h3>Plan Mensual Full</h3>
+<p>$ 90.000</p>
+<a href="detalle-clase.html">Ver detalle</a>
+<button type="button" data-add-to-cart data-id="plan-full" data-name="Plan Mensual Full" data-description="Acceso completo · 30 días" data-price="90000">Agregar a mi plan</button>
+<span class="add-feedback" role="status" aria-live="polite"></span>
+</article>
+<article>
+<img src="img/gym-2.png" alt="Grupo en clase de spinning">
+<h3>Clase de Spinning</h3>
+<p>$ 60.000</p>
+<a href="detalle-clase.html">Ver detalle</a>
+<button type="button" data-add-to-cart data-id="spinning-8" data-name="Spinning" data-description="Paquete de 8 clases" data-price="60000">Agregar a mi plan</button>
+<span class="add-feedback" role="status" aria-live="polite"></span>
+</article>
+<article>
+<img src="img/gym-3.png" alt="Entrenador guiando a un cliente">
+<h3>Entrenamiento personalizado</h3>
+<p>$ 120.000</p>
+<a href="detalle-clase.html">Ver detalle</a>
+<button type="button" data-add-to-cart data-id="personalizado" data-name="Entrenamiento personalizado" data-description="Plan individual" data-price="120000">Agregar a mi plan</button>
+<span class="add-feedback" role="status" aria-live="polite"></span>
+</article>
+</section>
+
+<!-- Categorías -->
+<section class="cats">
+<h2>Entrena por categoría</h2>
+<ul>
+<li><a href="clases.html#fuerza">Fuerza</a></li>
+<li><a href="clases.html#cardio">Cardio</a></li>
+<li><a href="clases.html#funcional">Funcional</a></li>
+</ul>
+</section>
+</main>
+
+<!-- PIE DE PÁGINA: igual en todas las páginas -->
+<footer>
+<p>JSZZNEWGEN · Calle 13 #24-18, Sabana de Torres, Santander</p>
+<p><a href="contacto.html">Contacto</a> · <a href="nosotros.html">Nosotros</a></p>
+<p><small>© 2026 JSZZNEWGEN. Todos los derechos reservados.</small></p>
+</footer>
+<script src="cart-store.js"></script>
+<script src="catalogo.js"></script>
+</body>
+</html>

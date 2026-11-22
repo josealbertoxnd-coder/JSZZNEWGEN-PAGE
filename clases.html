@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clases | JSZZNEWGEN</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ENCABEZADO: igual en todas las páginas -->
+<header>
+<a class="brand" href="index.html"><img src="img/jszznewgen-logo.svg" alt=""><span>JSZZ<small>NEWGEN</small></span></a>
+<nav>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="clases.html">Clases</a></li>
+<li><a href="carrito.html">Mi plan</a></li>
+<li><a href="login.html">Mi cuenta</a></li>
+<li><a href="nosotros.html">Nosotros</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- CONTENIDO PRINCIPAL -->
+<main>
+<h1>Clases y planes</h1>
+
+<!-- Buscador -->
+<form action="#">
+<p>
+<label for="buscar">Buscar clase:</label>
+<input type="search" id="buscar" name="buscar" placeholder="Ej: spinning">
+</p>
+<button type="submit">Buscar</button>
+</form>
+
+<!-- Menú de categorías: lleva a cada sección de esta misma página -->
+<nav>
+<ul>
+<li><a href="#fuerza">Fuerza</a></li>
+<li><a href="#cardio">Cardio</a></li>
+<li><a href="#funcional">Funcional</a></li>
+</ul>
+</nav>
+
+<section id="fuerza" class="grid">
+<h2>Fuerza</h2>
+<article>
+<img src="img/gym-4.png" alt="Sala de musculación con máquinas">
+<h3>Musculación guiada</h3>
+<p>$ 70.000</p>
+<a href="detalle-clase.html">Ver detalle</a>
+<button type="button" data-add-to-cart data-id="musculacion" data-name="Musculación guiada" data-description="Entrenamiento de fuerza" data-price="70000">Agregar a mi plan</button>
+<span class="add-feedback" role="status" aria-live="polite"></span>
+</article>
+<article>
+<img src="img/gym-5.png" alt="Levantamiento de barra olímpica">
+<h3>Powerlifting</h3>
+<p>$ 80.000</p>
+<a href="detalle-clase.html">Ver detalle</a>
+<button type="button" data-add-to-cart data-id="powerlifting" data-name="Powerlifting" data-description="Entrenamiento de fuerza" data-price="80000">Agregar a mi plan</button>
+<span class="add-feedback" role="status" aria-live="polite"></span>
+</article>
+</section>
+
+<section id="cardio" class="grid">
+<h2>Cardio</h2>
+<article>
+<img src="img/gym-2.png" alt="Grupo en clase de spinning">
+<h3>Spinning</h3>
+<p>$ 60.000</p>
+<a href="detalle-clase.html">Ver detalle</a>
+<button type="button" data-add-to-cart data-id="spinning-8" data-name="Spinning" data-description="Paquete de 8 clases" data-price="60000">Agregar a mi plan</button>
+<span class="add-feedback" role="status" aria-live="polite"></span>
+</article>
+<article>
+<img src="img/gym-6.png" alt="Clase de zumba con música">
+<h3>Zumba</h3>
+<p>$ 50.000</p>
+<a href="detalle-clase.html">Ver detalle</a>
+<button type="button" data-add-to-cart data-id="zumba" data-name="Zumba" data-description="Clase grupal de cardio" data-price="50000">Agregar a mi plan</button>
+<span class="add-feedback" role="status" aria-live="polite"></span>
+</article>
+</section>
+
+<section id="funcional" class="grid">
+<h2>Funcional</h2>
+<article>
+<img src="img/gym-7.png" alt="Entrenamiento funcional con kettlebells">
+<h3>Entrenamiento funcional</h3>
+<p>$ 85.000</p>
+<a href="detalle-clase.html">Ver detalle</a>
+<button type="button" data-add-to-cart data-id="funcional" data-name="Entrenamiento funcional" data-description="Fuerza y acondicionamiento" data-price="85000">Agregar a mi plan</button>
+<span class="add-feedback" role="status" aria-live="polite"></span>
+</article>
+<article>
+<img src="img/gym-8.png" alt="Persona haciendo yoga en colchoneta">
+<h3>Yoga y estiramiento</h3>
+<p>$ 45.000</p>
+<a href="detalle-clase.html">Ver detalle</a>
+<button type="button" data-add-to-cart data-id="yoga" data-name="Yoga y estiramiento" data-description="Movilidad y recuperación" data-price="45000">Agregar a mi plan</button>
+<span class="add-feedback" role="status" aria-live="polite"></span>
+</article>
+</section>
+</main>
+
+<!-- PIE DE PÁGINA: igual en todas las páginas -->
+<footer>
+<p>JSZZNEWGEN · Calle 13 #24-18, Sabana de Torres, Santander</p>
+<p><a href="contacto.html">Contacto</a> · <a href="nosotros.html">Nosotros</a></p>
+<p><small>© 2026 JSZZNEWGEN. Todos los derechos reservados.</small></p>
+</footer>
+<script src="cart-store.js"></script>
+<script src="catalogo.js"></script>
+</body>
+</html>

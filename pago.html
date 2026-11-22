@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pago | JSZZNEWGEN</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ENCABEZADO: igual en todas las páginas -->
+<header>
+<a class="brand" href="index.html"><img src="img/jszznewgen-logo.svg" alt=""><span>JSZZ<small>NEWGEN</small></span></a>
+<nav>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="clases.html">Clases</a></li>
+<li><a href="carrito.html">Mi plan</a></li>
+<li><a href="login.html">Mi cuenta</a></li>
+<li><a href="nosotros.html">Nosotros</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- CONTENIDO PRINCIPAL -->
+<main>
+<h1>Datos de envío y pago</h1>
+
+<form action="confirmacion.html" id="payment-form">
+<fieldset>
+<legend>Datos de facturación</legend>
+<p>
+<label for="direccion">Dirección:</label>
+<input type="text" id="direccion" name="direccion" value="Calle 13 #24-18" required>
+</p>
+<p>
+<label for="ciudad">Ciudad:</label>
+<select id="ciudad" name="ciudad">
+<option selected>Sabana de Torres</option>
+</select>
+</p>
+</fieldset>
+
+<fieldset>
+<legend>Método de pago</legend>
+<p>
+<input type="radio" id="tarjeta" name="metodo" value="tarjeta" checked>
+<label for="tarjeta">Tarjeta crédito o débito</label>
+</p>
+<p>
+<input type="radio" id="pse" name="metodo" value="pse">
+<label for="pse">PSE</label>
+</p>
+<p>
+<input type="radio" id="efectivo" name="metodo" value="efectivo">
+<label for="efectivo">Efectivo en el gimnasio</label>
+</p>
+</fieldset>
+
+<p><strong>Total a pagar: <span id="payment-total">$ 210.000</span></strong></p>
+<p class="payment-status" id="payment-status" role="status" aria-live="polite"></p>
+<button type="submit">Confirmar pago</button>
+</form>
+
+<p><a href="carrito.html">← Volver a mi plan</a></p>
+</main>
+
+<!-- PIE DE PÁGINA: igual en todas las páginas -->
+<footer>
+<p>JSZZNEWGEN · Calle 13 #24-18, Sabana de Torres, Santander</p>
+<p><a href="contacto.html">Contacto</a> · <a href="nosotros.html">Nosotros</a></p>
+<p><small>© 2026 JSZZNEWGEN. Todos los derechos reservados.</small></p>
+</footer>
+<script src="cart-store.js"></script>
+<script src="pago.js"></script>
+</body>
+</html>

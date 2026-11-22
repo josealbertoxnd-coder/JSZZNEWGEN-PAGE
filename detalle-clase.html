@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spinning | JSZZNEWGEN</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ENCABEZADO: igual en todas las páginas -->
+<header>
+<a class="brand" href="index.html"><img src="img/jszznewgen-logo.svg" alt=""><span>JSZZ<small>NEWGEN</small></span></a>
+<nav>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="clases.html">Clases</a></li>
+<li><a href="carrito.html">Mi plan</a></li>
+<li><a href="login.html">Mi cuenta</a></li>
+<li><a href="nosotros.html">Nosotros</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- CONTENIDO PRINCIPAL -->
+<main>
+<!-- Ruta de navegación (migas de pan) -->
+<nav aria-label="Ruta de navegación">
+<p>
+<a href="index.html">Inicio</a> &gt;
+<a href="clases.html">Clases</a> &gt;
+<a href="clases.html#cardio">Cardio</a> &gt;
+Spinning
+</p>
+</nav>
+
+<article class="detalle">
+<img src="img/spinning.png" alt="Grupo de personas pedaleando en bicicletas estáticas">
+<h1>Spinning</h1>
+<p><strong>$ 60.000</strong> por paquete de 8 clases</p>
+<p>Clase grupal de alta energía sobre bicicleta estática, ideal para quemar calorías y mejorar la resistencia.</p>
+
+<h2>Características</h2>
+<ul>
+<li>Clases de 45 minutos</li>
+<li>Para todos los niveles</li>
+<li>Cupo máximo de 20 personas</li>
+<li>Horarios en la mañana y en la noche</li>
+</ul>
+
+<form id="add-plan-form">
+<p>
+<label for="cantidad">Cantidad de paquetes:</label>
+<input type="number" id="cantidad" name="cantidad" min="1" max="99" value="1" required>
+</p>
+<button type="submit">Agregar a mi plan</button>
+<p id="add-plan-status" class="cart-status" role="status" aria-live="polite"></p>
+</form>
+</article>
+
+<p><a href="clases.html">← Volver a clases</a></p>
+</main>
+
+<!-- PIE DE PÁGINA: igual en todas las páginas -->
+<footer>
+<p>JSZZNEWGEN · Calle 13 #24-18, Sabana de Torres, Santander</p>
+<p><a href="contacto.html">Contacto</a> · <a href="nosotros.html">Nosotros</a></p>
+<p><small>© 2026 JSZZNEWGEN. Todos los derechos reservados.</small></p>
+</footer>
+<script src="cart-store.js"></script>
+<script src="add-plan.js"></script>
+</body>
+</html>
