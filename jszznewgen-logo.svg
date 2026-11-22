@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title description">
+  <title id="title">JSZZNEWGEN</title>
+  <desc id="description">Escudo oscuro con dos espadas cruzadas y un aura roja y dorada.</desc>
+  <defs>
+    <linearGradient id="steel" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".42" stop-color="#8d929c"/>
+      <stop offset=".52" stop-color="#f2f2f4"/>
+      <stop offset="1" stop-color="#343943"/>
+    </linearGradient>
+    <linearGradient id="blade" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8f8fb"/>
+      <stop offset=".5" stop-color="#9da2ac"/>
+      <stop offset="1" stop-color="#343943"/>
+    </linearGradient>
+    <radialGradient id="aura">
+      <stop offset="0" stop-color="#ff3024" stop-opacity=".48"/>
+      <stop offset=".54" stop-color="#e10600" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#e10600" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="red-glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="9" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="gold-glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    .aura-ring{transform-origin:256px 256px;animation:aura-pulse 3s ease-in-out infinite}
+    .aura-rays{transform-origin:256px 240px;animation:rays-turn 42s linear infinite}
+    @keyframes aura-pulse{0%,100%{opacity:.42;transform:scale(.94)}50%{opacity:.82;transform:scale(1.05)}}
+    @keyframes rays-turn{to{transform:rotate(360deg)}}
+    @media(prefers-reduced-motion:reduce){.aura-ring,.aura-rays{animation:none}}
+  </style>
+  <g class="aura-rays" opacity=".55" stroke="#ff3a2e" stroke-width="2">
+    <path d="M256 82 245 177M256 82 282 178M256 82 207 182M256 82 306 194M256 82 170 219M256 82 338 222M256 82 139 257M256 82 372 255"/>
+  </g>
+  <circle class="aura-ring" cx="256" cy="246" r="205" fill="url(#aura)"/>
+  <circle class="aura-ring" cx="256" cy="246" r="174" fill="none" stroke="#ed1710" stroke-opacity=".5" stroke-width="2" filter="url(#red-glow)"/>
+  <path d="m256 72 170 61v129c0 100-69 161-170 202-101-41-170-102-170-202V133z" fill="#08090c" fill-opacity=".92" stroke="#ed1006" stroke-width="13" filter="url(#red-glow)"/>
+  <path d="m256 94 147 52v115c0 83-57 136-147 175-90-39-147-92-147-175V146z" fill="#100c0e" stroke="#ffc400" stroke-width="4" filter="url(#gold-glow)"/>
+  <path d="M128 177 376 355M382 177 132 355" fill="none" stroke="#e10600" stroke-width="25" stroke-linecap="square" opacity=".9"/>
+  <path d="m118 170 237 169-45-6L113 183zm276 0L157 339l46-6 197-150z" fill="url(#blade)" stroke="#f4f4f6" stroke-width="3" stroke-linejoin="round"/>
+  <path d="m133 190 198 139" fill="none" stroke="#e10600" stroke-width="5"/>
+  <path d="m379 190-198 139" fill="none" stroke="#e10600" stroke-width="5"/>
+  <path d="m143 346 59 42-20 23-58-48zm226 0-59 42 20 23 58-48z" fill="#17181e" stroke="#ffc400" stroke-width="4"/>
+  <path d="m176 368 37 26m-52-12 37 26m156-40-37 26m52-12-37 26" stroke="#e10600" stroke-width="6"/>
+  <path d="m256 370 17 20-17 20-17-20z" fill="#ffc400" stroke="#08090c" stroke-width="5"/>
+  <path d="m256 410 0 30" stroke="#ed1006" stroke-width="8" filter="url(#red-glow)"/>
+  <path d="m256 445-8-16h16z" fill="#ffc400"/>
+</svg>
